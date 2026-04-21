@@ -130,9 +130,25 @@ All API requests, responses, and errors are written to **`logs/app.log`**.
 
 ---
 
+## Architecture Overview
+
+CLI → Validation → Order Layer → Logging → Output
+
 ## Assumptions
 
 - The bot targets **USDT-M** perpetual futures on the testnet only.
 - LIMIT orders use `timeInForce=GTC` (Good-Till-Cancelled) by default.
 - API credentials are provided via environment variables (not hardcoded).
 - Python 3.10+ is required (uses `X | Y` type-union syntax).
+
+## Future Scope & Architecture Vision
+
+While this project focuses on a clean, modular CLI application to meet the core requirements, the architecture is designed for extensibility. Possible next steps include:
+
+- **API Layer (FastAPI):** Expose order functionality via HTTP endpoints by wrapping the existing modules in a FastAPI service, enabling secure programmatic access beyond the CLI.
+
+- **Real-Time Market Data:** Integrate Binance Futures public WebSocket streams (`wss://fstream.binance.com`) to deliver live price updates without requiring API keys.
+
+- **Advanced Order Types:** Extend order logic to support `STOP_MARKET` and `TAKE_PROFIT_MARKET` for basic risk management workflows.
+
+- **Web Dashboard:** Build a React + Tailwind UI to interact with the backend and visualize market data using lightweight charting libraries.
