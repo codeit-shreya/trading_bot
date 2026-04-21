@@ -141,6 +141,10 @@ CLI → Validation → Order Layer → Logging → Output
 - API credentials are provided via environment variables (not hardcoded).
 - Python 3.10+ is required (uses `X | Y` type-union syntax).
 
+## Note
+
+Order execution is simulated to ensure consistent behavior without relying on external API availability. The architecture is designed to support real Binance API integration.
+
 ## Future Scope & Architecture Vision
 
 While this project focuses on a clean, modular CLI application to meet the core requirements, the architecture is designed for extensibility. Possible next steps include:
