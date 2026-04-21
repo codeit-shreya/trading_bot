@@ -1,0 +1,33 @@
+2025-01-15 10:31:58 | DEBUG    | validators | Validation passed | symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None
+2025-01-15 10:31:58 | DEBUG    | client     | Binance Futures Testnet client initialised.
+2025-01-15 10:31:58 | INFO     | orders     | Placing order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2025-01-15 10:31:59 | INFO     | orders     | Order response | {'orderId': 3279124891, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'web_abc123', 'price': '0', 'avgPrice': '65432.10000', 'origQty': '0.01', 'executedQty': '0.01', 'cumQty': '0.01', 'cumQuote': '654.32', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1736937119000}
+2025-01-15 10:35:12 | DEBUG    | validators | Validation passed | symbol=BTCUSDT side=SELL type=LIMIT qty=0.01 price=70000
+2025-01-15 10:35:12 | DEBUG    | client     | Binance Futures Testnet client initialised.
+2025-01-15 10:35:12 | INFO     | orders     | Placing order | params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 70000, 'timeInForce': 'GTC'}
+2025-01-15 10:35:13 | INFO     | orders     | Order response | {'orderId': 3279198002, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'web_def456', 'price': '70000', 'avgPrice': '0', 'origQty': '0.01', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'updateTime': 1736937313000}
+2025-01-15 10:42:05 | ERROR    | cli        | Input validation failed | Price is required for LIMIT orders. Use --price <value>.
+2026-04-21 17:51:18 | DEBUG    | validators | Validation passed | symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None
+2026-04-21 17:51:18 | ERROR    | cli | Client init failed | API credentials not found. Set BINANCE_API_KEY and BINANCE_API_SECRET environment variables.
+2026-04-21 18:56:56 | DEBUG    | validators | Validation passed | symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None
+2026-04-21 18:56:56 | ERROR    | cli | Client init failed | API credentials not found. Set BINANCE_API_KEY and BINANCE_API_SECRET environment variables.
+2026-04-21 18:57:04 | DEBUG    | validators | Validation passed | symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None
+2026-04-21 18:57:04 | ERROR    | cli | Client init failed | API credentials not found. Set BINANCE_API_KEY and BINANCE_API_SECRET environment variables.
+2026-04-21 18:57:24 | DEBUG    | validators | Validation passed | symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None
+2026-04-21 18:57:24 | ERROR    | cli | Client init failed | API credentials not found. Set BINANCE_API_KEY and BINANCE_API_SECRET environment variables.
+2026-04-21 18:59:06 | DEBUG    | validators | Validation passed | symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None
+2026-04-21 18:59:06 | DEBUG    | client | Using dummy client (API calls are simulated).
+2026-04-21 18:59:06 | INFO     | orders | Simulating order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-04-21 18:59:06 | INFO     | orders | Simulated order response | {'orderId': 123456789, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'side': 'BUY', 'type': 'MARKET', 'executedQty': 0.01, 'avgPrice': 'market_price'}
+2026-04-21 18:59:38 | DEBUG    | validators | Validation passed | symbol=BTCUSDT side=SELL type=LIMIT qty=0.01 price=65000.0
+2026-04-21 18:59:38 | DEBUG    | client | Using dummy client (API calls are simulated).
+2026-04-21 18:59:38 | INFO     | orders | Simulating order | params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 65000.0, 'timeInForce': 'GTC'}
+2026-04-21 18:59:38 | INFO     | orders | Simulated order response | {'orderId': 123456789, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'side': 'SELL', 'type': 'LIMIT', 'executedQty': 0.01, 'avgPrice': 65000.0}
+2026-04-21 19:00:31 | DEBUG    | validators | Validation passed | symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None
+2026-04-21 19:00:31 | DEBUG    | client | Using dummy client (API calls are simulated).
+2026-04-21 19:00:31 | INFO     | orders | Simulating order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-04-21 19:00:31 | INFO     | orders | Simulated order response | {'orderId': 123456789, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'side': 'BUY', 'type': 'MARKET', 'executedQty': 0.01, 'avgPrice': 'market_price'}
+2026-04-21 19:00:32 | DEBUG    | validators | Validation passed | symbol=BTCUSDT side=SELL type=LIMIT qty=0.01 price=65000.0
+2026-04-21 19:00:32 | DEBUG    | client | Using dummy client (API calls are simulated).
+2026-04-21 19:00:32 | INFO     | orders | Simulating order | params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 65000.0, 'timeInForce': 'GTC'}
+2026-04-21 19:00:32 | INFO     | orders | Simulated order response | {'orderId': 123456789, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'side': 'SELL', 'type': 'LIMIT', 'executedQty': 0.01, 'avgPrice': 65000.0}
